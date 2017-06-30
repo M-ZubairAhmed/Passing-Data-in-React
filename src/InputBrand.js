@@ -20,7 +20,7 @@ class InputBrand extends Component {
       this.setState({
         inputBrand: event.target.value
       });
-      console.log(this.state.0inputBrand);
+      console.log(this.state.inputBrand);
     }
   };
 

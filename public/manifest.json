@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "short_name": "React-DataTransfer",
   "name": "Passing Data in React JS",
+=======
+  "short_name": "React App",
+  "name": "Create React App Sample",
+>>>>>>> a203b1c0d7ba1dab96135cf8b6a4f0af0746f765
   "icons": [
     {
       "src": "favicon.ico",

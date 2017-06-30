@@ -20,7 +20,10 @@ class InputBrand extends Component {
       this.setState({
         inputBrand: event.target.value
       });
-      console.log(this.state.inputBrand);
+    } else if (event.target.name === 'inputPrice') {
+      this.setState({
+        inputPrice: event.target.value
+      });
     }
   };
 
@@ -34,6 +37,16 @@ class InputBrand extends Component {
             value={this.state.inputName}
             type="text"
             placeholder="only plain text"
+            onChange={this.handleInputChange}
+          />
+        </FormGroup>
+        <FormGroup>
+          <ControlLabel>Enter Price</ControlLabel>
+          <FormControl
+            name="inputPrice"
+            value={this.state.inputPrice}
+            type="number"
+            placeholder="enter number"
             onChange={this.handleInputChange}
           />
         </FormGroup>

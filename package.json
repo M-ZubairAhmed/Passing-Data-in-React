@@ -1,38 +1,27 @@
 {
   "name": "passing-data-in-react",
-<<<<<<< HEAD
   "homepage": "http://M-ZubairAhmed.github.io/Passing-Data-in-React",
-=======
->>>>>>> a203b1c0d7ba1dab96135cf8b6a4f0af0746f765
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
-<<<<<<< HEAD
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-=======
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
->>>>>>> a203b1c0d7ba1dab96135cf8b6a4f0af0746f765
     "react-scripts": "1.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-<<<<<<< HEAD
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
-}
-=======
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
->>>>>>> a203b1c0d7ba1dab96135cf8b6a4f0af0746f765

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import Total from './Total';
+import InputBrand from './InputBrand';
+import './styles.css';
 
 class ProductList extends Component {
   constructor(props) {
@@ -32,6 +34,7 @@ class ProductList extends Component {
     );
     return (
       <div>
+        <InputBrand />
         {products}
         <Total total={this.state.total} />
       </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
 
 class Product extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Product extends Component {
         <br />
         Cost : {this.state.cost}
         <br />
-        <button onClick={this.sendPriceBack}>Add to cart</button>
+        <Button onClick={this.sendPriceBack}>Add to cart</Button>
         <hr />
       </div>
     );

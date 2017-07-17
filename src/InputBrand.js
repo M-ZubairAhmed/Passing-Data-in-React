@@ -3,7 +3,10 @@ import {
   FormGroup,
   ControlLabel,
   FormControl,
-  HelpBlock
+  HelpBlock,
+  Grid,
+  Row,
+  Col
 } from 'react-bootstrap';
 
 class InputBrand extends Component {
@@ -29,28 +32,32 @@ class InputBrand extends Component {
 
   render() {
     return (
-      <form>
-        <FormGroup>
-          <ControlLabel>Enter Brand</ControlLabel>
-          <FormControl
-            name="inputBrand"
-            value={this.state.inputName}
-            type="text"
-            placeholder="only plain text"
-            onChange={this.handleInputChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <ControlLabel>Enter Price</ControlLabel>
-          <FormControl
-            name="inputPrice"
-            value={this.state.inputPrice}
-            type="number"
-            placeholder="enter number"
-            onChange={this.handleInputChange}
-          />
-        </FormGroup>
-      </form>
+      <Grid>
+        <Row>
+          <Col lg={4} lgOffset={4} md={4} mdOffset={4}>
+            <FormGroup>
+              <ControlLabel>Enter Brand</ControlLabel>
+              <FormControl
+                name="inputBrand"
+                value={this.state.inputName}
+                type="text"
+                placeholder="only plain text"
+                onChange={this.handleInputChange}
+              />
+            </FormGroup>
+            <FormGroup>
+              <ControlLabel>Enter Price</ControlLabel>
+              <FormControl
+                name="inputPrice"
+                value={this.state.inputPrice}
+                type="number"
+                placeholder="enter number"
+                onChange={this.handleInputChange}
+              />
+            </FormGroup>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

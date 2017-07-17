@@ -6,7 +6,8 @@ import {
   HelpBlock,
   Grid,
   Row,
-  Col
+  Col,
+  Button
 } from 'react-bootstrap';
 
 class InputBrand extends Component {
@@ -34,7 +35,7 @@ class InputBrand extends Component {
     return (
       <Grid>
         <Row>
-          <Col lg={4} lgOffset={4} md={4} mdOffset={4}>
+          <Col lg={2} lgOffset={4} md={4}>
             <FormGroup>
               <ControlLabel>Enter Brand</ControlLabel>
               <FormControl
@@ -45,6 +46,8 @@ class InputBrand extends Component {
                 onChange={this.handleInputChange}
               />
             </FormGroup>
+          </Col>
+          <Col lg={2} md={4}>
             <FormGroup>
               <ControlLabel>Enter Price</ControlLabel>
               <FormControl
@@ -56,6 +59,9 @@ class InputBrand extends Component {
               />
             </FormGroup>
           </Col>
+        </Row>
+        <Row>
+          <Button bsStyle="primary">Add new</Button>
         </Row>
       </Grid>
     );

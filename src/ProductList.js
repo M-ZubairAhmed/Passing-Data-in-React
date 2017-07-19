@@ -24,9 +24,21 @@ class ProductList extends Component {
     });
   };
 
+  addBrand = (brand, price) => {
+    console.log('ProductList', brand, '=', price);
+    // this.setState({
+    //   productData: [
+    //     ...this.state.productData,
+    //     (this.state.model: brand),
+    //     (this.state.cost: price)
+    //   ]
+    // });
+  };
+
   render() {
-    const products = this.state.productData.map(product =>
+    const products = this.state.productData.map((product, i) =>
       <Product
+        key={i}
         model={product.model}
         cost={product.cost}
         calculatingTotal={this.calculatingTotal}
@@ -34,7 +46,7 @@ class ProductList extends Component {
     );
     return (
       <div>
-        <InputBrand />
+        <InputBrand addBrand={this.addBrand} />
         {products}
         <Total total={this.state.total} />
       </div>

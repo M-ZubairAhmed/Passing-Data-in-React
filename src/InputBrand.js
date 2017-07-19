@@ -55,18 +55,23 @@ class InputBrand extends Component {
           <Col lg={2} md={4}>
             <FormGroup>
               <ControlLabel>Enter Price</ControlLabel>
-              <FormControl
-                name="inputPrice"
-                value={this.state.inputPrice}
-                type="number"
-                placeholder="enter number"
-                onChange={this.handleInputChange}
-              />
+              <InputGroup>
+                <InputGroup.Addon>$</InputGroup.Addon>
+                <FormControl
+                  name="inputPrice"
+                  value={this.state.inputPrice}
+                  type="number"
+                  placeholder="enter number"
+                  onChange={this.handleInputChange}
+                />
+              </InputGroup>
             </FormGroup>
           </Col>
         </Row>
         <Row>
-          <Button bsStyle="primary">Add new</Button>
+          <Button bsStyle="primary" onClick={this.storeNewBrand}>
+            Add new
+          </Button>
         </Row>
       </Grid>
     );

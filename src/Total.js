@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Label } from 'react-bootstrap';
 
 class Total extends Component {
   render() {

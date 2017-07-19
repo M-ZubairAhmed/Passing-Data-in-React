@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {
   FormGroup,
-  ControlLabel,
   FormControl,
-  HelpBlock,
   Grid,
   Row,
   Col,

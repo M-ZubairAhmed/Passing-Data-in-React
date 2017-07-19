@@ -7,7 +7,8 @@ import {
   Grid,
   Row,
   Col,
-  Button
+  Button,
+  InputGroup
 } from 'react-bootstrap';
 
 class InputBrand extends Component {
@@ -29,6 +30,10 @@ class InputBrand extends Component {
         inputPrice: event.target.value
       });
     }
+  };
+
+  storeNewBrand = () => {
+    this.props.addBrand(this.state.inputBrand, this.state.inputPrice);
   };
 
   render() {

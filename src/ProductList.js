@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navbar, NavItem, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
 import Product from './Product';
 import Total from './Total';
 import InputBrand from './InputBrand';
@@ -48,9 +49,22 @@ class ProductList extends Component {
     );
     return (
       <div>
-        <InputBrand addBrand={this.addBrand} />
+        <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="https://github.com/M-ZubairAhmed/Passing-Data-in-React">
+                Data flow in React
+              </a>
+            </Navbar.Brand>
+          </Navbar.Header>
+          <Nav>
+            <InputBrand addBrand={this.addBrand} />
+          </Nav>
+          <Navbar.Header>
+            <Total total={this.state.total} />
+          </Navbar.Header>
+        </Navbar>
         {products}
-        <Total total={this.state.total} />
       </div>
     );
   }

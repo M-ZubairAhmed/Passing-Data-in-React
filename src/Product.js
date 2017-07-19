@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Grid } from 'react-bootstrap';
 class Product extends Component {
   constructor(props) {
     super(props);
@@ -15,14 +15,16 @@ class Product extends Component {
 
   render() {
     return (
-      <div>
-        Model : {this.state.model}
-        <br />
-        Cost : {this.state.cost}
-        <br />
-        <Button onClick={this.sendPriceBack}>Add to cart</Button>
-        <hr />
-      </div>
+      <Grid>
+        <div>
+          Model : {this.state.model}
+          <br />
+          Cost : {this.state.cost}
+          <br />
+          <Button onClick={this.sendPriceBack}>Add to cart</Button>
+          <hr />
+        </div>
+      </Grid>
     );
   }
 }

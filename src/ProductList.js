@@ -20,27 +20,29 @@ class ProductList extends Component {
 
   calculatingTotal = price => {
     this.setState({
-      total: price + this.state.total
+      total: Math.round((price + this.state.total) * 100) / 100
     });
   };
 
   addBrand = (brand, price) => {
-    console.log('ProductList', brand, '=', price);
-    // this.setState({
-    //   productData: [
-    //     ...this.state.productData,
-    //     (this.state.model: brand),
-    //     (this.state.cost: price)
-    //   ]
-    // });
+    console.log('ProductList:', brand, '=', price);
+    this.setState({
+      productData: [
+        ...this.state.productData,
+        {
+          model: brand,
+          cost: parseFloat(price)
+        }
+      ]
+    });
   };
 
   render() {
-    const products = this.state.productData.map((product, i) =>
+    const products = this.state.productData.map((brandData, i) =>
       <Product
         key={i}
-        model={product.model}
-        cost={product.cost}
+        model={brandData.model}
+        cost={brandData.cost}
         calculatingTotal={this.calculatingTotal}
       />
     );

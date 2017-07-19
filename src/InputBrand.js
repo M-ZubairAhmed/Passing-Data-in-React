@@ -9,7 +9,7 @@ import {
   InputGroup
 } from 'react-bootstrap';
 
-class InputBrand extends Component {
+export default class InputBrand extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -73,5 +73,3 @@ class InputBrand extends Component {
     );
   }
 }
-
-export default InputBrand;

@@ -4,7 +4,7 @@ import Product from './Product';
 import Total from './Total';
 import InputBrand from './InputBrand';
 
-class ProductList extends Component {
+export default class ProductList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -68,5 +68,3 @@ class ProductList extends Component {
     );
   }
 }
-
-export default ProductList;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Total extends Component {
+export default class Total extends Component {
   render() {
     return (
       <div>
@@ -12,5 +12,3 @@ class Total extends Component {
     );
   }
 }
-
-export default Total;

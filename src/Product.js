@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Grid, Row, Col } from 'react-bootstrap';
-class Product extends Component {
+
+export default class Product extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,5 +32,3 @@ class Product extends Component {
     );
   }
 }
-
-export default Product;

@@ -25,7 +25,6 @@ export default class ProductList extends Component {
   };
 
   addBrand = (brand, price) => {
-    console.log('ProductList:', brand, '=', price);
     this.setState({
       productData: [
         ...this.state.productData,

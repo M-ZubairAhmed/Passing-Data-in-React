@@ -41,3 +41,6 @@ callbackMethodInParent = (dataFromChild) => {
 this.props.callbackMethodInParent(newData);
 ```
 [combined image with number tags]
+
+#### Page status
+https://updown.io/suC9

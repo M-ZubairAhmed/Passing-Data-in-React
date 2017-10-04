@@ -38,9 +38,14 @@ export default class InputBrand extends Component {
 
   storeNewBrand = () => {
     this.props.addBrand(this.state.inputBrand, this.state.inputPrice)
+    this.setState({
+      inputPrice: '',
+      inputBrand: ''
+    })
   }
 
   render() {
+    console.log('render')
     return (
       <Grid>
         <Row>
@@ -48,7 +53,7 @@ export default class InputBrand extends Component {
             <FormGroup>
               <FormControl
                 name="inputBrand"
-                value={this.state.inputName}
+                value={this.state.inputBrand}
                 type="text"
                 placeholder="Enter Brand"
                 onChange={this.handleInputChange}
